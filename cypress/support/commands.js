@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { visitHomepage, visitCareersPage } from './commandFunctions'
+
+Cypress.Commands.add('visitHomepage', visitHomepage)
+
+Cypress.Commands.add('visitCareersPage', visitCareersPage)
+
+Cypress.Commands.add('jobTitle', () => {
+  cy.get('.job-offer__title')
+})
