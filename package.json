@@ -1,0 +1,14 @@
+{
+  "name": "qa-task-10clouds",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "Jeremiah Hukpati",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}
