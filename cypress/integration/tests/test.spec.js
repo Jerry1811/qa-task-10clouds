@@ -12,9 +12,7 @@ describe('Test Scenario One', () => {
 
     cy.jobTitle()
       .each(($openPosition) => {
-        console.log($openPosition.text())
         // add all open job position titles to the "openPositions" array
-        console.log(typeof openPositions)
         openPositions.push($openPosition.text())
       })
       .then(() => {
